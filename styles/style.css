@@ -13,3 +13,6 @@
     color: #324A5E;
 }
 
+.disabled {
+    display: none;
+}

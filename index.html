@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -17,7 +18,27 @@
     
     <main class="main">
         <div class="main__add">
+            <ul class="main__new-tasks">
+                
+            </ul>
             <a href="#" class="main__add-btn">Add task</a>
+            <div class="main__form-create disabled">
+                <form action="#" method="dialog" class="main__form">
+                    <div class="main__task-info">
+                        <!-- <textarea name="task" class="main__task-input" placeholder="I need to do..." maxlength="50"></textarea> -->
+                        <input type="text" class="main__task-input" placeholder="I need to do...">
+                        <div class="main__task-settings">
+                            <div class="main__task-data">
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__buttons">
+                        <button class="main__add-task">Add task</button>
+                        <button class="main__cansel">Cansel</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="main__empty-screen">
@@ -35,6 +56,22 @@
         </div>
     </main> 
 
-    <script src="js.js"></script>
+    <div class="one">
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <div class="second">
+        <div class="two"></div>
+        <div class="third">
+            <div class="four"></div>
+            <div class="four"></div>
+            <div class="four"></div>
+            <div class="four"></div>
+        </div>
+    </div>
+    
+    <script src="scripts/js.js"></script>
 </body>
 </html>
+
+
