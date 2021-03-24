@@ -2,21 +2,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     width: 700px;
     margin: 0 auto;
-    background: #fafafa;
-    padding-bottom: 70px;
+    padding: 0 20px 70px;
+    position: relative;
+}
+
+.main__empty-screen {
+    text-align: center;
 }
 
 .main__add {
     padding-top: 70px;
     align-self: flex-start;
     position: absolute;
+    left: 0;
+    margin: 0 25px;
+    width: calc( 100% - 50px );
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.main__task-input {
-    resize: none;
+.main__add-btn {
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.main__add-btn::before {
+    display: inline-block;
+    text-align: center;
+    content: "+";
+    margin-right: 15px;
+    width: 29px;
+    border-radius: 50%;
+    transition: background .4s, color .3s;
+}
+
+.main__add-btn:hover::before {
+    background: #89CEF4;
+    color: #fff;
+}
+
+.main__new-tasks {
+    width: 100%;
 }
 
 .main__task-in-progress {
@@ -24,10 +56,78 @@
     padding: 0;
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.main__task-in-progress:hover {
+    border-color: #89CEF4;
+}
+
+.main__task-name {
+    padding: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .main__task-checkbox {
-    margin-right: 15px;
+    margin-right: 10px;
     position: relative;
-    top: 2px;
+} 
+
+.main__form-create {
+    width: 100%;
 }
+
+.main__task-input {
+    width: 100%;
+    padding: 0 10px 5px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+    outline: 0;
+}
+
+.main__task-input:focus {
+    border-bottom: 2px solid #89CEF4;
+}
+
+/* button */
+.btn {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    transition: background .4s;
+}
+
+.main__add-task {
+    color: #90c0e4;
+    border: 1px solid #90c0e4;
+}
+
+.main__add-task:hover,
+.main__add-task:focus {
+    color: #fff;
+    background: #90c0e4;
+}
+
+.main__cancel {
+    color: #ffbdbd;
+    border: 1px solid  #ffbdbd;
+}
+
+.main__cancel:hover,
+.main__cancel:focus {
+    color: #fff;
+    background: #ffbdbd;
+}
+/* end button */
