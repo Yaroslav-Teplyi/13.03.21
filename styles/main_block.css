@@ -84,6 +84,14 @@
     width: 100%;
 }
 
+.main__task-info {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #89CEF4;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+
 .main__task-input {
     width: 100%;
     padding: 0 10px 5px;
