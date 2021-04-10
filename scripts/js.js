@@ -2,11 +2,12 @@
 let listOfTasks = [];
 let idCounter = 0;
 
-
-if(localStorage.getItem('tasks').length > 2) {
-    listOfTasks = JSON.parse(localStorage.getItem('tasks'))
-    idCounter = JSON.parse(localStorage.getItem('id'))
-    $('.main__empty-screen').hide();  
+if(localStorage.getItem('tasks') != null){
+    if(localStorage.getItem('tasks').length > 2) {
+        listOfTasks = JSON.parse(localStorage.getItem('tasks'))
+        idCounter = JSON.parse(localStorage.getItem('id'))
+        $('.main__empty-screen').hide();  
+    }
 }
 
 $('.main__add-btn').on('click', function() {
